@@ -1,0 +1,13 @@
+﻿@model CreditAction
+<div>
+    <form asp-action="CreditAction" method="post" class="text-center m-3">
+        <div>
+            Deposit<input asp-for="depositValue" />
+        </div>
+        <div>
+            Withdraw<input asp-for="withdrawValue" />
+        </div>
+        <input class="btn btn-success" type="submit" value="Apply" />
+    </form>
+</div>
+

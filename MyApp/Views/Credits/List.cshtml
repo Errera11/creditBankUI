@@ -1,0 +1,10 @@
+﻿<div class="m-10">
+    <h2 class="m-3 mx-auto text-center">@Model.currentCredit</h2>
+    @{ foreach (Credit credit in Model.AllCredits)
+        {
+            @Html.Partial("AllCredits", credit);
+        }
+
+    }
+</div>
+

@@ -1,0 +1,58 @@
+﻿@model CreditCartViewModel 
+<div>
+    <div class="max-auto text-center p-3">
+        @if (@Model.creditCart.ClientCredit?.id == 0)
+        {
+            <h3>
+                Currently you have no credits
+            </h3>
+        }
+
+        else
+        {
+            <h3>
+                Your credit info:
+            </h3>
+
+            <div class="m-3 border border-danger rounded border-3 p-3">
+                <div>
+                    Remaining amount:   @Model.creditCart.ClientCredit.RemainingAmount.ToString("c")
+                </div>
+                <div>
+                    Remaining amount to pay:    @Model.creditCart.ClientCredit.RemainingAmountToPay.ToString("c")
+                </div>
+                <div>
+                    Credit Time:    @Model.creditCart.ClientCredit.CreditTime years
+                </div>
+                <div>
+                    Percentage:     @Model.creditCart.ClientCredit.Percentage %
+                </div>
+                @if (Model.creditCart.ClientCredit.id != 0)
+                {
+                    @if (@Model.creditCart.ClientCredit.isConfirmed == 1)
+                    {
+                        <div class="bg-success text-white">Your credit applied</div>
+                        <div class="tetx-center m-3">
+                            @Html.Partial("CreditAction", Model.applyCredit)
+                        </div>
+                    }
+                    else if (@Model.creditCart.ClientCredit.isConfirmed == -1)
+                    {
+                        <div class="bg-danger text-white">Your credit denied</div>
+                    }
+                    else
+                    {
+                        <div>
+                            <p><a class="btn btn-warning" asp-controller="ApplyCredit" asp-action="Checkout">Confirm Credit</a></p>
+                        </div>
+                    }
+                }
+            </div>
+        }
+
+
+
+    </div>
+       
+</div>
+

@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{43B71207-5DD1-45BC-9F51-C1EBCECA246A}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyApp/Views/ApplyCredit/Checkout.cshtml">
+    <Files>
+      <File FileName="MyApp/Program.cs" Line="17" Column="50" />
+      <File FileName="MyApp/Views/ApplyCredit/Checkout.cshtml" Line="5" Column="69" />
+      <File FileName="MyApp/Controllers/AuthController.cs" Line="69" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyApp" expanded="True">
+            <Node name="MyApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Repository" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="ApplyCredit" expanded="True">
+                  <Node name="CreditConfirmation.cshtml" selected="True" />
+                </Node>
+                <Node name="Auth" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

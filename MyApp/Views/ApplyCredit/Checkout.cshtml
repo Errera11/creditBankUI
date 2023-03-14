@@ -1,0 +1,32 @@
+﻿@model ApplyCredit
+
+<div>
+    
+    <form asp-action="Checkout" method="post" class="text-center m-3">
+        <h3>
+            Credit applying
+        </h3>
+        <div>
+            Login<input asp-for="login" />
+        </div>
+        <div>
+            Password<input asp-for="password" />
+        </div>
+        <div>
+            Name<input asp-for="name" />
+        </div>
+        <div>
+            Lastname<input asp-for="lastname" />
+        </div>
+        <div>
+            Age<input asp-for="age" />
+        </div>
+        <div>
+            Income<input asp-for="income" />
+        </div>
+        <div>
+            Job<input asp-for="job" />
+        </div>
+        <input class="btn btn-success" type="submit" value="Apply" />
+    </form>
+</div>

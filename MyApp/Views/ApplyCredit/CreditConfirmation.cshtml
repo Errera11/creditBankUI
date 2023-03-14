@@ -1,0 +1,36 @@
+﻿@model ApplyCreditViewModel
+<div class="text-center m-3">
+    <h3>Client info</h3>
+    <div>
+        Client name: @Model.applyCredit.name
+    </div>
+    <div>
+        Client lastname: @Model.applyCredit.lastname
+    </div>
+    <div>
+        Client income: @Model.applyCredit.income.ToString("c")
+    </div>
+    <div>
+        Client job: @Model.applyCredit.job
+    </div>
+    <br />
+    <h3>Credit info</h3>
+    <div>
+        Client credit amount: @Model.clientCredit.RemainingAmountToPay.ToString("c")
+    </div>
+    <div>
+        Client credit percentage: @Model.clientCredit.Percentage%
+    </div>
+    <div>
+        Client credit time: @Model.clientCredit.CreditTime years
+    </div>
+
+    <div class="align-items-end">
+        <p><a class="btn btn-warning bg-green" asp-controller="ApplyCredit" asp-action="Confirm"> Confirm </a></p>
+    </div>
+
+    <div class="align-items-end bg-red">
+        <p><a class="btn btn-warning" asp-controller="ApplyCredit" asp-action="Deny"> Deny </a></p>
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@model int
+
+<h2 class="text-center m-3">
+    <div>
+        Your credit @if (Model == 1)
+        {
+            <div>Confirmed</div>
+        }
+        else
+        {
+            <div>Denied</div>
+        }
+    </div>
+    <p><a class="btn btn-warning" asp-controller="Credits" asp-action="List">Back to credits</a></p>
+</h2>
+
